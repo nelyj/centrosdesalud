@@ -30,5 +30,10 @@ gem 'html2haml'
 gem 'simple_form'
 gem 'angularjs-rails'
 
+gem 'state_machine'
+gem 'geocoder'
+gem 'friendly_id' 
+
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
+
