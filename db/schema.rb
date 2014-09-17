@@ -11,11 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917150937) do
+ActiveRecord::Schema.define(version: 20140917153440) do
 
   create_table "centros", force: true do |t|
     t.integer  "region_id"
-    t.string   "region"
     t.integer  "comuna_id"
     t.integer  "dependencia_id"
     t.integer  "tipo_id"
@@ -28,6 +27,7 @@ ActiveRecord::Schema.define(version: 20140917150937) do
     t.string   "fax"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "servicio_id"
   end
 
 end
