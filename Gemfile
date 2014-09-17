@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 gem 'haml-rails'
 gem 'html2haml'
 gem 'simple_form'
+gem 'state_machine'
 
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
+
