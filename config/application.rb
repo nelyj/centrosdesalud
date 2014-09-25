@@ -21,6 +21,7 @@ module Centrosdesalud
     # config.i18n.default_locale = :de
 
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
+    config.serve_static_assets = true
 
   end
 end
