@@ -1,1 +1,1 @@
-centro.js
+var hola = "";

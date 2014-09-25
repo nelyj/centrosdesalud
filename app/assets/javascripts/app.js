@@ -5,7 +5,7 @@
 //= require_tree ./angular/models
 //= require_tree ./angular/controllers
 
-app = angular.module('Centros', ['ngRoute','ngAnimate','ngResource']);
+app = angular.module('Centros', ['ngRoute','ngAnimate','ngResource', 'appCtrl']);
 
 app.config(['$locationProvider', '$httpProvider', '$routeProvider',
 function($locationProvider, $httpProvider, $routeProvider){
@@ -14,10 +14,10 @@ function($locationProvider, $httpProvider, $routeProvider){
 
 	$routeProvider
 	.when('/',{
-		templateUrl: '../assets/index.html'
-		})
+		templateUrl: '../assets/index.html',
+		controller: 'homeCtrl'
+	})
 	.otherwise({
-
 		redirectTo: '/'
 	});
 
