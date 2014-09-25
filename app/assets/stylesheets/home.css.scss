@@ -1,3 +1,26 @@
 .home{
-	background-color: #16A085;
+	background-color: rgba(22,160,133,0.05);
+
+	h1, p{
+		color: #171717;
+		padding: 0.3em;
+	}
+
+	h1{
+		font-weight: 300;
+	}
+
+	p{
+		strong{
+			font-weight: 700;
+		}
+	}
+
+	.busqueda{
+		padding: 1em 1em;
+	}
+
+	.buscador{	
+		padding-right: 0px;
+	}
 }
