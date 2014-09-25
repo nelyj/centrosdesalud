@@ -7,3 +7,11 @@
 //= require_tree ./angular/models
 //= require_tree ./angular/controllers
 
+app = angular.module('Centros', ['ngRoute','ngAnimate','ngResource']);
+
+app.config(['$locationProvider', '$httpProvider', '$routeProvider',
+function($locationProvider, $httpProvider, $routeProvider){
+
+	
+
+}]);
