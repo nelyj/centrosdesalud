@@ -15,7 +15,6 @@ function($locationProvider, $httpProvider, $routeProvider){
 	$routeProvider
 	.when('/',{
 		templateUrl: '../assets/index.html'
-		
 		)}
 	.otherwise({
 
