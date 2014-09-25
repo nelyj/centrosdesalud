@@ -15,8 +15,8 @@ function($locationProvider, $httpProvider, $routeProvider){
 	$routeProvider
 	.when('/',{
 		templateUrl: '../assets/index.html'
-		// controller: 'homeCtrl'
-	})
+		
+		)}
 	.otherwise({
 
 		redirectTo: '/'
