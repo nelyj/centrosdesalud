@@ -2,6 +2,7 @@
 //= require angular-animate
 //= require angular-resource
 //= require angular-route
+//= require angular-rails-templates
 //= require angular-touch
 
 //= require angular-google-maps.min
