@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917153440) do
+ActiveRecord::Schema.define(version: 20140926201914) do
 
   create_table "centros", force: true do |t|
     t.integer  "region_id"
@@ -28,6 +28,26 @@ ActiveRecord::Schema.define(version: 20140917153440) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "servicio_id"
+  end
+
+  create_table "colegios", force: true do |t|
+    t.integer  "rbd"
+    t.string   "nombre_establecimiento"
+    t.string   "dependencia"
+    t.string   "area_geografica"
+    t.string   "estado"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "alumnos_psu"
+    t.integer  "alumnos_psu_leng"
+    t.integer  "alumnos_psu_mat"
+    t.integer  "alumnos_psu_nem"
+    t.string   "psu_lenguaje"
+    t.integer  "psu_matematica"
+    t.integer  "psu_nem"
+    t.integer  "region"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
