@@ -43,8 +43,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'haml-rails'
 gem 'html2haml'
 gem 'simple_form'
-gem 'angularjs-rails'
-gem '	'
+gem 'angular-rails-templates'
 
 gem 'state_machine'
 gem 'geocoder'

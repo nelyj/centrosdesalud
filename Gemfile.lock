@@ -31,7 +31,6 @@ GEM
       railties (>= 3.1)
       sprockets
       tilt
-    angularjs-rails (1.2.22)
     arel (5.0.1.20140414130214)
     bower-rails (0.8.3)
     builder (3.2.2)
@@ -198,7 +197,6 @@ PLATFORMS
 
 DEPENDENCIES
   angular-rails-templates
-  angularjs-rails
   bower-rails
   capybara
   coffee-rails (~> 4.0.0)
