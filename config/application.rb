@@ -19,10 +19,14 @@ module Centrosdesalud
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    # Enable the asset pipeline
+    config.assets.enabled = true
 
-    config.assets.paths << "#{Rails}/vendor/assets/fonts"
+    config.assets.initialize_on_precompile = false
 
     config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+    config.assets.paths << "#{Rails}/vendor/assets/fonts"
 
 
   end
