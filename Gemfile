@@ -44,6 +44,7 @@ gem 'haml-rails'
 gem 'html2haml'
 gem 'simple_form'
 gem 'angularjs-rails'
+gem 'angular-rails-templates'
 
 gem 'state_machine'
 gem 'geocoder'
