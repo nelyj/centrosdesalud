@@ -29,7 +29,16 @@ GEM
       tzinfo (~> 1.1)
     angularjs-rails (1.2.22)
     arel (5.0.1.20140414130214)
+    bower-rails (0.8.3)
     builder (3.2.2)
+    capybara (2.4.3)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    childprocess (0.5.3)
+      ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -37,12 +46,20 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    database_cleaner (1.3.0)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
+    factory_girl (4.4.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.4.1)
+      factory_girl (~> 4.4.0)
+      railties (>= 3.0.0)
+    ffi (1.9.5)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     geocoder (1.2.5)
-    haml (4.0.5)
+    haml (4.1.0.beta.1)
       tilt
     haml-rails (0.5.3)
       actionpack (>= 4.0.1)
@@ -64,13 +81,16 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
-    libv8 (3.16.14.3)
+    libv8 (3.16.14.7)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile (0.6.0)
     minitest (5.4.1)
     multi_json (1.10.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -100,8 +120,28 @@ GEM
     rdoc (4.1.2)
       json (~> 1.4)
     ref (1.0.5)
+    rspec (2.99.0)
+      rspec-core (~> 2.99.0)
+      rspec-expectations (~> 2.99.0)
+      rspec-mocks (~> 2.99.0)
+    rspec-collection_matchers (1.0.0)
+      rspec-expectations (>= 2.99.0.beta1)
+    rspec-core (2.99.2)
+    rspec-expectations (2.99.2)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.99.2)
+    rspec-rails (2.99.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-collection_matchers
+      rspec-core (~> 2.99.0)
+      rspec-expectations (~> 2.99.0)
+      rspec-mocks (~> 2.99.0)
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
+    rubyzip (1.1.6)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -111,6 +151,11 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    selenium-webdriver (2.43.0)
+      childprocess (~> 0.5)
+      multi_json (~> 1.0)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
     sexp_processor (4.4.4)
     simple_form (3.0.2)
       actionpack (~> 4.0)
@@ -135,20 +180,25 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.3.0)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    websocket (1.2.1)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   angularjs-rails
+  bower-rails
+  capybara
   coffee-rails (~> 4.0.0)
+  database_cleaner
+  factory_girl_rails (~> 4.0)
   friendly_id
   geocoder
   haml-rails
@@ -158,11 +208,14 @@ DEPENDENCIES
   pg
   rails (= 4.1.5)
   rails_12factor
+  rspec
+  rspec-rails (~> 2.0)
+  sass (= 3.2.19)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  selenium-webdriver
   simple_form
   sqlite3
   state_machine
   therubyracer
-  turbolinks
   uglifier (>= 1.3.0)
