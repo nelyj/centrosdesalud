@@ -2,11 +2,12 @@
 //= require angular-route/angular-route
 //= require angular-rails-templates
 
-app = angular.module('Centros',['templates','ngRoute']);
+app = angular.module('Centros',['templates','ngRoute', 'Controllers']);
 
 app.config(['$routeProvider',function($routeProvider){
 	$routeProvider
 		.when('/',{
-			templateUrl: "index.html"
+			templateUrl: "index.html",
+			controller: 'homeCtrl'
 		});
 }]);
