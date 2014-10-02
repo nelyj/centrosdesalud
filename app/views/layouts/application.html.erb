@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="Centros">
+<html>
 <head>
   <title>Centrosdesalud</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body id="app" class="{{clase}}" ng-view>
+<body>
+	<%= yield %>
 </body>
 </html>

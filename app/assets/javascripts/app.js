@@ -1,31 +1,12 @@
-//= require angular
-//= require angular-animate
-//= require angular-resource
-//= require angular-route
+//= require angular/angular
+//= require angular-route/angular-route
 //= require angular-rails-templates
-//= require angular-touch
 
-//= require angular-google-maps.min
+app = angular.module('Centros',['templates','ngRoute']);
 
-//= require_tree ./angular/models
-//= require_tree ./angular/controllers
-
-app = angular.module('Centros', ['ngRoute','ngAnimate','ngResource', 'google-maps', 'ngTouch', 'appCtrl']);
-
-app.config(['$locationProvider', '$httpProvider', '$routeProvider',
-function($locationProvider, $httpProvider, $routeProvider){
-
-	$httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]').attr('content');
-
+app.config(['$routeProvider',function($routeProvider){
 	$routeProvider
-	.when('/',{
-		templateUrl: '../assets/index.html',
-		controller: 'homeCtrl'
-	})
-	.otherwise({
-		redirectTo: '/'
-	});
-
-	$locationProvider.html5Mode(true);
-
+		.when('/',{
+			templateUrl: "index.html"
+		});
 }]);

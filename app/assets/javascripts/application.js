@@ -12,6 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap.min
-//= require flat-ui
 //= require app
+//= require_tree .
