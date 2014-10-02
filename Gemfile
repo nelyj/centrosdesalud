@@ -35,6 +35,14 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'bower-rails'
 gem 'angular-rails-templates'
+
+gem "foreman"
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
+end
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
@@ -48,6 +56,4 @@ gem 'geocoder'
 gem 'friendly_id' 
 
 gem 'pg', group: :production
-gem 'rails_12factor', group: :production
-gem 'rails_serve_static_assets', group: :production
 
