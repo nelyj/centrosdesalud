@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require angular
+//= require angular/angular
 //= require bootstrap.min
 //= require flat-ui
 //= require app
