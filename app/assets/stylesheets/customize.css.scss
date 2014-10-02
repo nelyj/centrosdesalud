@@ -1,8 +1,11 @@
+#map_canvas{
+	-webkit-filter: blur(2px) grayscale(70%);
+	-moz-filter: blur(2px) grayscale(70%);
+	-ms-filter: blur(2px) grayscale(70%);
+	-o-filter: blur(2px) grayscale(40%);
+	filter: blur(2px) grayscale(70%);
 
-.starter-template {
-	padding: 90px 15px;
-	text-align: center;
-	background-color: #2980b9;
+
 }
 
 .angular-google-map-container { 
@@ -14,6 +17,21 @@
 }
 
 .container{
-	z-index: 99999999;
+	z-index: 99999999	;
 }
 
+.center{
+		z-index: 99999999;
+		position: absolute;
+		left: 50%;
+		top:10%;
+}
+
+.box-starter{
+	background-color:rgba(39,174,96,0.9);
+	width: 60em;
+	height: 30em;
+	position: relative;
+	left: -50%;
+	top: 10%;
+}
